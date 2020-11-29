@@ -3,7 +3,8 @@
     --text-color: #757575;
     --link-color-origin: #2196F3;
     --white-color: #FFFFFF;
-    --footer-text-color: rgba(255, 255, 255, 0.6);}
+    --footer-text-color: rgba(255, 255, 255, 0.6);
+    --hero-back-color: #2F303A;}
 
 
 body {
@@ -121,7 +122,7 @@ a {
     display: block;
     width: 1600px;
     height: 600px;
-    background-color: #2F303A;
+    background-color:var(--hero-back-color);
     }
 .hero-item {
     color: var(--white-color);
@@ -133,7 +134,6 @@ a {
     line-height: 60px;
     text-align: center;
     text-transform: uppercase;
-    /* position: absolute; */
     width: 696px;
     height: 120px;
     margin-left: 452px;
@@ -141,7 +141,6 @@ a {
     margin-top: 200px; 
     }
 .hero-button {
-    /* position: absolute; */
     width: 200px;
     height: 50px;
     color: var(--white-color);
