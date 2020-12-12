@@ -8,7 +8,7 @@
 
 
 body {
-    width: 1600px;
+    /* width: 1600px; */
     font-family: roboto ,sans-serif;
     background-color: #FFFFFF;}
 li {
@@ -23,7 +23,7 @@ li {
 a {
     text-decoration: none;}
 .container {
-    width: 1600px;
+    /* width: 1600px; */
     /* padding-left: 215px;
     padding-right: 215px; */
 
@@ -32,7 +32,7 @@ a {
 /* site-nav */
 .head-container {
 
-    width: 1600px;
+    /* width: 1600px; */
     display: flex;
     align-items: center;
     background-color: var(--white-color);
@@ -178,7 +178,7 @@ h2 {
 
 .advantage {
     display: flex;
-    background-color: #E5E5E5;
+    /* background-color: #E5E5E5; */
     padding-top: 94px;
     padding-bottom: 94px;
 }
@@ -215,7 +215,7 @@ h2 {
 /* чем мы занимаемся */
 
 .section-work {
-    background-color: #E5E5E5;
+    /* background-color: #E5E5E5; */
     padding-bottom: 94px;
      
 }
@@ -285,7 +285,7 @@ h2 {
     }
 /* footer */
 .footer-container {
-    width: 1600px;
+    /* width: 1600px; */
     color: var(--white-color);
     }
 .footer-container>a {
