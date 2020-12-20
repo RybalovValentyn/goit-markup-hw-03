@@ -4,10 +4,13 @@
     --link-color-origin: #2196F3;
     --white-color: #FFFFFF;
     --footer-text-color: rgba(255, 255, 255, 0.6);
-    --hero-back-color: #2F303A;}
+    --hero-back-color: #2F303A;
+    --backgroundcolor:   #FFFFFF;
+}
 
 /* html {
     box-sizing: border-box;}
+
     *,
     *::before,
     *::after {
@@ -19,9 +22,9 @@
     background-color: #FFFFFF;
 }
 body {
-    margin: 0 auto;
+    margin: 0 ;
     font-family: roboto ,sans-serif;
-    background-color: #FFFFFF;
+    /* background-color: #FFFFFF; */
     
 
 }
@@ -29,41 +32,37 @@ li {
     list-style: none;
     /* outline: 1px solid red ; */
     }
-/* h2 { */
-* { 
-    margin: 0px;
-    padding: 0px;
+h1,h2 {
+    margin: 0;
 }
 a {
     text-decoration: none;}
 .container {
-    width: 1600px;
+    width: 1230px;
     margin-left: auto;
     margin-right: auto;
-    }
+    padding-left: 15px;
+    padding-right: 15px;
+    /* outline: 2px solid tomato; */
+    /* background-color: wheat; */
+        /* box-sizing: border-box; */
+        }
     
 /* site-nav */
 .head-container {
-
-    /* width: 1600px; */
+background-color: var(--backgroundcolor)
+}
+.head-container>div {
     display: flex;
     align-items: center;
-    background-color: var(--white-color);
-}
-.nav-contact li {
-    margin-right: 50px;
-}
-.nav-contact li:last-child {
-    margin-right: 0px;
 }
 .main-nav  {
+    flex-basis: 100%;
     display: flex;
     align-items: center;
-    margin-top: 32px;
-    margin-bottom: 32px;
-}
-
+} 
 .nav-list {
+    padding: 0px;
     display: flex;
     align-items: center;
 }
@@ -73,10 +72,14 @@ a {
 .nav-list li:last-child {
     margin-right: 0px;
 }
-.nav-contact{
+.nav-contact {
+    margin-left: auto;
     display: flex;
-    margin-left: 331px;
     align-items: center;
+}
+.nav-contact li:last-child {
+    margin-left: 50px;
+
 }
 .navigation {    
     color: var(--link-color);
@@ -94,7 +97,7 @@ a {
     color: var(--link-color-origin);}
 .navigation-contact {
     display: inline-block;
-    width: 122px;
+    /* width: 122px; */
     color: var(--text-color);
     font-weight: 500;
     font-style: normal;
@@ -109,7 +112,6 @@ a {
     /* logo */
 .logo {margin-bottom: 24px;
     margin-top: 24px;
-    margin-left: 215px;
     margin-right: 93px;
     color:  var(--link-color);
     font-family: Raleway, sans-serif;
@@ -126,20 +128,22 @@ a {
     font-size: 26px;
     line-height: 30px;
 }
-/* .logo:focus,
-.logo:hover {
-    border: 3px solid var(--link-color-origin)  ;  
-}  */
+
+
     /* Hero */
 .hero {
     display: block;
-    /* width: 1600px; */
-    height: 600px;
+    padding-top: 200px;
+    padding-bottom: 200px;
     background-color:var(--hero-back-color);
     }
+
 .hero-item {
+    display: block;
+    width: 696px;
+    margin-left: auto;
+    margin-right: auto;
     color: var(--white-color);
-    display: inline-block;
     font-family: Roboto;
     font-style: normal;
     font-weight: 900;
@@ -147,32 +151,34 @@ a {
     line-height: 60px;
     text-align: center;
     text-transform: uppercase;
-    width: 696px;
-    height: 120px;
-    margin-left: 452px;
-    /* margin-right: auto; */
-    margin-top: 200px; 
+     
     }
 .hero-button {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
     width: 200px;
     height: 50px;
+    margin-top: 30px;
     color: var(--white-color);
     font-family: Roboto;
     font-style: normal;
     font-weight: 700;
     font-size: 16px;
     line-height: 30px;
-    display: inline-block;
     text-align: center;
     letter-spacing: 0.06em;
     background-color: #2196F3;
     border-radius:  4px;
     border: none;
-    margin-top: 30px;
-    margin-left: 700px;
    }
    /* advantage */
 /* .advant  */
+.section {
+    background-color: var(--backgroundcolor);
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
 b {
     color: var(--link-color);
     font-weight: 700;
@@ -191,31 +197,35 @@ h2 {
 
 .advantage {
     display: flex;
+    padding: 0;
+    /* margin-left: auto;
+    margin-right: auto; */
+    margin-top: 0;
+    margin-bottom: 0;
+    justify-content: center;
+
     /* background-color: #E5E5E5; */
-    padding-top: 94px;
-    padding-bottom: 94px;
+
 }
-.advantage li:last-child {
-    margin-right: 0px;
-}
-.advantage li:first-child {
-    margin-left: 215px;
-}
+
 .advantage-list { 
     /* display: flex; */
     height: 101px;
     width: 270px;
     margin-right: 30px;
 } 
+.advantage li:last-child {
+    margin-right:0;
+}
 .advantage-item {
     /* display: flex; */
     margin-bottom: 10px;
     width: 270px;
     height: 16px;
-    /
+    
 } 
 .advantage-text {
-    display: inline-block;
+    display: block;
     width: 270px;
     height: 75px;
     color: var(--text-color);
@@ -230,15 +240,22 @@ h2 {
 .section-work {
     /* background-color: #E5E5E5; */
     padding-bottom: 94px;
+    background-color: var(--backgroundcolor);
      
 }
-.section h2 {
+/* .section h2 {
     margin-bottom: 50px;
     
-}
+} */
 .working-box {
-    margin-top: 50px;
     display: flex;
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 0;
+    padding: 0;
+    justify-content: center;
+    
 }
 .working-box li {
     margin-right: 30px;
@@ -246,9 +263,12 @@ h2 {
 .working-box li:last-child {
     margin-right: 0px;
 }
-.working-box li:first-child {
-    margin-left: 215px;
+.working-item {
+
 }
+/* .working-box li:first-child {
+    margin-left: 215px;
+} */
 
 
 /* team-section */
@@ -265,6 +285,10 @@ h2 {
 .section-card {
         display: flex;
         margin-left: auto;
+        margin-right: auto;
+        padding: 0;
+        margin-top: 0;
+        margin-bottom: 0;
         justify-content: center;
 }
 .profi-card {
@@ -301,10 +325,13 @@ h2 {
     letter-spacing: 0.03em;
     }
 /* footer */
-.footer-container {
+.footer-sektion {
+    background-color: var(--hero-back-color);
+
+}
+.footer-container { 
     margin-left: auto;
     margin-right: auto;
-    width: 1600px;
     color: var(--white-color);
     }
 .footer-container>a {
@@ -318,12 +345,11 @@ h2 {
     line-height: 31px;
 }
 .footer-container li {
-     margin-left: 215px;
     margin-top: 9px;
     margin-bottom: 9px;
 }
 .contact {
-    margin-left: 215px;
+    display: block;
     font-family: roboto, sans-serif;
     color: #FFFFFF;
     font-style: normal;
@@ -332,8 +358,16 @@ h2 {
     line-height: 24px;
     letter-spacing: 0.03em;
 }
+.footer-container ul {
+    padding: 0;
+    margin-top: 9px;
+}
+.footer-container ul>li {
+    margin: 0;
+}
 .footer-link {
     display: inline-block;
+    margin-top: 9px;
     /* margin-bottom: 60px; */
     color: var(--text-color);
     font-family: roboto, sans-serif;
@@ -358,8 +392,7 @@ h2 {
 /* button-list */
 .portfolio-project {
     background-color: var(--white-color);
-    width: 1600px;
-      
+       
   }
 .port-list {
     
@@ -368,6 +401,10 @@ h2 {
     border-top: 1px solid #ECECEC;
     padding-top: 93px;
     padding-bottom: 56px;
+    padding-left: 0;
+    margin: 0;
+    margin-left: auto;
+    margin-right: auto;
 }
 .button-radio {    
     margin-right: 8px;
@@ -383,6 +420,9 @@ h2 {
     line-height: 26px;
     text-align: center;
     letter-spacing: 0.03em;
+    }
+    .port-list>.button-radio:last-child>  {
+        margin-right: 0;
     }
 .button-radio:hover,
 .button-radio:focus {
@@ -400,26 +440,35 @@ h2 {
     /* width: 1230; */
     display: flex;
     flex-wrap: wrap;
-    padding-left: 215px;
-}
+    padding: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+    }
 .works {
     display: block;
-    margin-right: 30px;
-    margin-left: auto;
+        /* margin-left: auto; */
+    height: 404px;
+    width: 370px;
+    
+}
+.work-link {
+     margin-right: 30px;
+    /* margin-left: auto; */
     margin-bottom: 30px;
     height: 404px;
     width: 370px;
     border: 1px solid #EEEEEE;
 }
-.works:nth-child(3n) {
-    margin-right: 0px;
+.work-link:nth-child(3n) {
+    margin-right: auto;
 }
-.works:nth-last-child(3n) {
-    margin-left:0px;
+.work-link:nth-last-child(3n) {
+    margin-left:auto ;
 }
-.works.works:nth-last-child(-n+3) {
+.work-link:nth-last-child( -n + 3) {
     margin-bottom: 94px;
 }
+
 
  .works>h2 { 
     display: inline-block;
