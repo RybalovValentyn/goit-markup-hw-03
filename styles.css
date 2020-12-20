@@ -201,12 +201,12 @@ h2 {
 
 .advantage {
     display: flex;
-    padding: 0;
+    /* padding: 0; */
     /* margin-left: auto;
     margin-right: auto; */
     margin-top: 0;
     margin-bottom: 0;
-    justify-content: center;
+    justify-content: space-between;
 
     /* background-color: #E5E5E5; */
 
@@ -258,7 +258,7 @@ h2 {
     margin-right: auto;
     margin-bottom: 0;
     padding: 0;
-    justify-content: center;
+    justify-content: space-between;
     
 }
 .working-box li {
@@ -293,7 +293,7 @@ h2 {
         padding: 0;
         margin-top: 0;
         margin-bottom: 0;
-        justify-content: center;
+        justify-content: space-between;
 }
 .profi-card {
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
