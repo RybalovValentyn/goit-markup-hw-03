@@ -38,7 +38,7 @@ h1,h2 {
 a {
     text-decoration: none;}
 .container {
-    width: 1230px;
+    width: 1200px;
     margin-left: auto;
     margin-right: auto;
     padding-left: 15px;
@@ -134,7 +134,7 @@ background-color: var(--backgroundcolor)
 .hero {
     display: block;
     max-width: 1600px;
-    min-width: 1230px;
+    min-width: 1200px;
     margin-left: auto;
     margin-right: auto;
     padding-top: 200px;
@@ -144,9 +144,11 @@ background-color: var(--backgroundcolor)
 
 .hero-item {
     display: block;
-    width: 696px;
+    width: 606px;
     margin-left: auto;
     margin-right: auto;
+    padding-left: 45px;
+    padding-right: 45px;
     color: var(--white-color);
     font-family: Roboto;
     font-style: normal;
@@ -331,6 +333,7 @@ h2 {
 /* footer */
 .footer-sektion {
     background-color: var(--hero-back-color);
+    padding-bottom: 10px;
 
 }
 .footer-container { 
